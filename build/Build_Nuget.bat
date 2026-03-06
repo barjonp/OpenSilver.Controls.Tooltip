@@ -23,7 +23,7 @@ IF "%~1" == "" (
 ECHO. 
 ECHO %ESC%[95mBuilding %ESC%[0m%CFG% %ESC%[95mconfiguration%ESC%[0m
 ECHO. 
-msbuild %SRC_DIR%\Silverlight.Controls.ToolTips.OpenSilver.sln -p:Configuration=%CFG% -clp:ErrorsOnly -restore
+msbuild %SRC_DIR%\Silverlight.Controls.ToolTips.OpenSilver.sln -p:Configuration=%CFG%;OpenSilverVersion=%OpenSilverPkgVersion% -clp:ErrorsOnly -restore
 
 ECHO. 
 ECHO %ESC%[95mPacking %ESC%[0mOpenSilver.Controls.ToolTips %ESC%[95mNuGet package%ESC%[0m
